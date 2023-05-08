@@ -736,6 +736,11 @@ details[open] .arrow {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.hover\:text-soft-red:hover {
+  --tw-text-opacity: 1;
+  color: hsl(14 88% 65% / var(--tw-text-opacity));
+}
+
 @media not all and (min-width: 1440px) {
   .max-laptop\:hidden {
     display: none;
