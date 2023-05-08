@@ -422,6 +422,12 @@ video {
   display: none;
 }
 
+body {
+  font-family: Kumbh Sans, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -520,4 +526,16 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gradient-custom {
+  background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }

@@ -21,9 +21,9 @@ module.exports = {
       borderColor: {
         'light-grayish-blue': 'hsl(240, 5%, 91%)',
       },
-      gradientColorStops: {
-        'soft-violet': 'hsl(273, 75%, 66%)',
-        'soft-blue': 'hsl(240, 73%, 65%)',
+
+      backgroundImage:{
+        "gradient-custom": 'linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%))',
       },
       fontFamily:{
         'kumbh-sans': ['Kumbh Sans', 'sans-serif']
