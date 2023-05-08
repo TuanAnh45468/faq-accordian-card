@@ -3,7 +3,33 @@
 @tailwind utilities;
 
 @layer base {
-    body{
-        @apply font-kumbh-sans text-sm
-    }
+  body {
+    @apply font-kumbh-sans text-sm;
+  }
+
+  p{
+    @apply pt-3 text-dark-grayish-blue
+  }
+
+  summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details[open] .arrow {
+    transform: rotate(180deg);
+  }
+}
+
+@layer components {
+  .arrow{
+    transition: transform 0.3s;
+  }
 }

@@ -20,10 +20,22 @@
     <link href="output.css" rel="stylesheet" />
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
-  <body class="bg-gradient-custom bg-no-repeat min-h-screen">
-    <main>
+  <body
+    class="bg-gradient-custom bg-no-repeat flex flex-col items-center justify-center min-h-screen pt-8"
+  >
+    <main class="mobile:w-[335px] mobile:h-[80%] shadow-2xl bg-white rounded-2xl mobile:flex mobile:flex-col mobile:justify-center gap-y-8 px-5">
+      <div class="mt-[-110px] relative self-center">
+        <img alt="" class="w-[250px] h-[179px]" src="images/illustration-woman-online-mobile.svg" />
+        <svg class="fill-violet-800 absolute top-[103px] left-[-40px]" height="104" width="240" xmlns="http://www.w3.org/2000/svg"><path d="M116.454 102.048L4.667 34.239c-3.56-2.054-6.61-5.42-3.142-7.627l112.184-66.364c1.682-1.07 4.237-1.773 5.951-.75l117.328 69.904c3.559 2.12 4.198 8.028.652 10.17L131.185 101.94a14.53 14.53 0 01-14.731.107z"  fill-rule="nonzero" opacity=".099"/></svg>
+      </div>
+      <h1 class="self-center text-3xl font-bold">FAQ</h1>
       <details>
-        <summary>How many team members can I invite?</summary>
+        <summary>
+          <span class="question">
+            How many team members can I invite?
+          </span>
+          <img alt="arrow down" class="arrow" src="images/icon-arrow-down.svg">
+        </summary>
         <p>
           You can invite up to 2 additional users on the Free plan. There is no
           limit on team members for the Premium plan.
@@ -31,7 +43,12 @@
       </details>
 
       <details>
-        <summary>What is the maximum file upload size?</summary>
+        <summary>
+          <span class="question">
+          What is the maximum file upload size?
+          </span>
+          <img alt="arrow down" class="arrow" src="images/icon-arrow-down.svg">
+        </summary>
         <p>
           No more than 2GB. All files in your account must fit your allotted
           storage space.
@@ -39,7 +56,13 @@
       </details>
 
       <details>
-        <summary>How do I reset my password?</summary>
+        <summary>
+          <span class="question">
+            How do I reset my password?
+          </span>
+          <img alt="arrow down" class="arrow" src="images/icon-arrow-down.svg">
+        </summary>
+
         <p>
           Click “Forgot password” from the login page or “Change password” from
           your profile page. A reset link will be emailed to you.
@@ -47,7 +70,10 @@
       </details>
 
       <details>
-        <summary>Can I cancel my subscription?</summary>
+        <summary>
+          <span class="question">Can I cancel my subscription?</span>
+          <img alt="arrow down" class="arrow" src="images/icon-arrow-down.svg">
+        </summary>
         <p>
           Yes! Send us a message, and we’ll process your request no questions
           asked.
@@ -55,12 +81,16 @@
       </details>
 
       <details>
-        <summary>Do you provide additional support?</summary>
+        <summary>
+          <span class="question">Do you provide additional support?</span>
+          <img alt="arrow down" class="arrow" src="images/icon-arrow-down.svg">
+        </summary>
         <p>
           Chat and email support is available 24/7. Phone lines are open during
           normal business hours.
         </p>
       </details>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>

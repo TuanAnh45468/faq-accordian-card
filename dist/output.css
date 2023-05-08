@@ -428,6 +428,28 @@ body {
   line-height: 1.25rem;
 }
 
+p {
+  padding-top: 0.75rem;
+  --tw-text-opacity: 1;
+  color: hsl(240 6% 50% / var(--tw-text-opacity));
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] .arrow {
+  transform: rotate(180deg);
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -528,8 +550,73 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
+.arrow{
+  transition: transform 0.3s;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.left-\[-40px\] {
+  left: -40px;
+}
+
+.top-\[103px\] {
+  top: 103px;
+}
+
+.mt-\[-110px\] {
+  margin-top: -110px;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-\[179px\] {
+  height: 179px;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-y-8 {
+  row-gap: 2rem;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-custom {
@@ -538,4 +625,79 @@ body {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.fill-violet-800 {
+  fill: #5b21b6;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-dark-grayish-blue {
+  --tw-text-opacity: 1;
+  color: hsl(240 6% 50% / var(--tw-text-opacity));
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 375px) {
+  .mobile\:flex {
+    display: flex;
+  }
+
+  .mobile\:h-\[70\%\] {
+    height: 70%;
+  }
+
+  .mobile\:h-\[80\%\] {
+    height: 80%;
+  }
+
+  .mobile\:h-\[350px\] {
+    height: 350px;
+  }
+
+  .mobile\:h-\[390px\] {
+    height: 390px;
+  }
+
+  .mobile\:w-\[335px\] {
+    width: 335px;
+  }
+
+  .mobile\:flex-col {
+    flex-direction: column;
+  }
+
+  .mobile\:justify-center {
+    justify-content: center;
+  }
 }
